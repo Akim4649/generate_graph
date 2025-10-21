@@ -84,7 +84,7 @@ if uploaded_file is not None:
                 fmt=".2f",
                 annot_kws={"color": "black", "size": font_size},
                 cbar=True,                  # ✅ カラーバーON
-                cbar_kws={"shrink": 0.8, "pad": 0.02}  # 🔹右側にコンパクトに表示
+                cbar_kws={"shrink": 0.8, "pad": 0.02, "label": color_col}  # 🔹右側にコンパクトに表示
             )
             plt.xlabel(x_col)
             plt.ylabel(y_col)
